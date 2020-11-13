@@ -84,9 +84,9 @@ public class Measurementcontroller {
 		}
 
 		MeasurementEntity measurementEntity = new MeasurementEntity(	
-				sensorEntity,Date,new java.util.Date(),request.getKey(),request.getV1(),
+				sensorEntity,Date,new java.util.Date(),request.getKey(),request.getPower(),
 				request.getV2(),request.getV3(), request.getI1(),request.getI2(),request.getI3(),request.getCe(),request.getPf2(),
-				request.getPf3(),request.getP1(),request.getP2(),request.getP3(),request.getConverse(),System.currentTimeMillis());
+				request.getPf3(),request.getP1(),request.getP2(),request.getP3(),System.currentTimeMillis());
 		sensorservice.save(measurementEntity);
 
 		return ResponseEntity.ok().build();

@@ -33,6 +33,7 @@ public class SensorEntity {
     )
     private Set<MeasurementEntity> measurements = new HashSet<>();
 
+    
     public SensorEntity() {
     
     }

@@ -5,7 +5,7 @@ public class Measurementinput {
 	private long sensorId;
 	private String key;
 	private double  power;
-	private double  v1;
+	//private double  v1;
 	private double  v2;
 	private double  v3;
     private double i1;
@@ -17,31 +17,13 @@ public class Measurementinput {
     private double ce;
     private double pf2;
     private double pf3;
-    private long converse;
 	private String date;
 	
 	
-	
-	public long getConverse() {
-		return converse;
-	}
-
-	public void setConverse(long converse) {
-		this.converse = converse;
-	}
-
-	public String getDate() {
-		return date;
-	}
-
-	public void setDate(String date) {
-		this.date = date;
-	}
-
 	public Measurementinput() {
 		super();
 	}
-
+	
 	public long getSensorId() {
 		return sensorId;
 	}
@@ -54,22 +36,18 @@ public class Measurementinput {
 	public void setKey(String key) {
 		this.key = key;
 	}
-	
-
 	public double getPower() {
 		return power;
 	}
-
 	public void setPower(double power) {
 		this.power = power;
 	}
-
-	public double getV1() {
-		return v1;
-	}
-	public void setV1(double v1) {
-		this.v1 = v1;
-	}
+//	public double getV1() {
+//		return v1;
+//	}
+//	public void setV1(double v1) {
+//		this.v1 = v1;
+//	}
 	public double getV2() {
 		return v2;
 	}
@@ -118,15 +96,12 @@ public class Measurementinput {
 	public void setP3(double p3) {
 		this.p3 = p3;
 	}
-
 	public double getCe() {
 		return ce;
 	}
-
 	public void setCe(double ce) {
 		this.ce = ce;
 	}
-
 	public double getPf2() {
 		return pf2;
 	}
@@ -139,5 +114,15 @@ public class Measurementinput {
 	public void setPf3(double pf3) {
 		this.pf3 = pf3;
 	}
+	
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	
+	
 
 }

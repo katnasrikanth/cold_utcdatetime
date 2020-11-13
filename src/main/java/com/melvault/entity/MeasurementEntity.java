@@ -34,15 +34,14 @@ public class MeasurementEntity {
 	@Column(name="unit_key")
 	private String key;
 
-	@Column(name="unit_value")
-	private double power;
+	@Column(name="unit_power")
+	private Double power;
 
 
+//	@Column(name="unit_v1")
+//	private Double v1;
 
-	@Column(name="unit_v1")
-	private Double v1;
-
-	@Column(name="unit_v2",nullable=true)
+	@Column(name="unit_v2")
 	private Double v2;
 
 	@Column(name="unit_v3")
@@ -81,12 +80,12 @@ public class MeasurementEntity {
 	@Column(name = "time")
 	private LocalDateTime timestamp1;
 
-	public MeasurementEntity(SensorEntity sensorEntity, String Date,Date date,String key, double power, double v1,double v2,double v3,
+	public MeasurementEntity(SensorEntity sensorEntity, String Date,Date date,String key, double power,double v2,double v3,
 			double i1,double i2,double i3,double ce,double pf2,double pf3,double p1,double p2,double p3, long l) {
 		this.sensorEntity = sensorEntity;
 		this.key = key;
 		this.power = power;
-		this.v1=v1;
+		//this.v1=v1;
 		this.v2=v2;
 		this.v3=v3;
 		this.i1=i1;
@@ -104,6 +103,7 @@ public class MeasurementEntity {
 	}
 
 	public MeasurementEntity() {
+		super();
 
 	}
 
@@ -113,7 +113,7 @@ public class MeasurementEntity {
 
 	public void setTimestamp1(LocalDateTime timestamp1) {
 		this.timestamp1 = timestamp1;
-	}@Column(name="unit_p3")
+	}
 
 	public String getDate() {
 		return Date;
@@ -131,13 +131,13 @@ public class MeasurementEntity {
 		this.id = id;
 	}
 
-	public Double getV1() {
-		return v1;
-	}
-
-	public void setV1(Double v1) {
-		this.v1 = v1;
-	}
+//	public Double getV1() {
+//		return v1;
+//	}
+//
+//	public void setV1(Double v1) {
+//		this.v1 = v1;
+//	}
 
 	public Double getV2() {
 		return v2;
@@ -244,10 +244,10 @@ public class MeasurementEntity {
 		this.key = key;
 	}
 
-	public double getPower() {
+	public Double getPower() {
 		return power;
 	}
-	public void setPower(double power) {
+	public void setPower(Double power) {
 		this.power = power;
 	}
 
